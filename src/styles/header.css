@@ -1,21 +1,67 @@
-header {
-    background-color: #00000073;
-    color: #fff;
+.cabecalho {
     display: flex;
     height: 5em;
+    width: 100vw;
+    background-color: #00000073;
+    color: #fff;
     align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
     h1 {
-        margin: 1em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Fira Code';
+        font-size: 2.8em;
+        font-weight: bold;
+        text-indent: .5em;
     }
+
+    .logo {
+        margin-left: .5em;
+    }
+
     .navbar {
-        margin: 1em;
+        align-items: center;
+        display: flex;
+        gap: 2em;
+        margin-left: auto;
+        margin-right: 1.5em;
         a {
             color: #fff;
-            margin: 5px;
             text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+        .delivery {
+                display: flex;
+                align-items: center;
+                gap: .2em;
+                background-color: #FF0000;
+                padding: .4em;
+                border-radius: 10px;
+                font-size: 1.5em;
+                font-weight: 900;
+            }
+
+        .delivery:hover {
+            background-color: #ff0000b7;
+        }
+
+        .cart {
+            background-color: #F87A05;
+            border-radius: 20em;
+            padding: 10px;
+        }
+
+        .cart:hover {
+            background-color: #FC4C00;
+           padding: 0;
+           border-radius: 0;
         }
     }
-}
+    .navbar > a:hover {
+        background-color: #FC4C00;
+        border-radius: 10px;
+        padding: 10px;
+    }
 
+    
+}
