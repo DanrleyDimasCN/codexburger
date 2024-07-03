@@ -46,18 +46,20 @@
         }
 
         .cart {
-            background-color: #F87A05;
-            border-radius: 20em;
-            padding: 10px;
+        margin-right: 10px;
+        background-color: #F87A05;
+        border-radius: 10px;
+        padding: 10px;
+        
         }
 
         .cart:hover {
-            background-color: #FC4C00;
-           padding: 0;
-           border-radius: 0;
+        background-color: #FC4C00;
+        border-radius: 10px;
+        padding: 10px;
         }
     }
-    .navbar > a:hover {
+    .navbar > .nav-item:hover {
         background-color: #FC4C00;
         border-radius: 10px;
         padding: 10px;
