@@ -1,7 +1,6 @@
 .img-inicio {
     width: 100vw;
-    height: 150vh;
-    filter: blur(1.5px) brightness(85%);
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     z-index: -1;
 }
