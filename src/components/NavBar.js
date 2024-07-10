@@ -13,23 +13,28 @@ export default function NavBar() {
 
     return (
             <header className="box-principal">
-                <div className='box-'>
+                <div className='box-title'>
                     <h1>CodeXburguer</h1>
+                    <img src={logoburguer} alt="logo da hamburgueria"/>
                 </div>
-                <img src={logoburguer} alt="logo da hamburgueria"/>
-                    <button onClick={toggleMenu}>
+                <div className='box-cart'>
+                    <a href="#"><img src={carrinho} alt="Carrinho de itens selecionados"/></a>
+                </div>           
+                <div className='box-menu'>
+                    <button onClick={toggleMenu} className='box-button'>
                         ☰
                     </button>
                     {isOpen && (<nav>
-                        <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#">Quem Somos</a></li>
-                            <li><a href="#">Novidades</a></li>
-                            <li><a href="#">Cardápio</a></li>
-                            <li><a href="#">Delivery<img src={phone} alt="Icone de delivery"/></a></li>
-                        </ul>
-                    </nav>) }
-                    <a href="#"><img src={carrinho} alt="Carrinho de itens selecionados"/></a>
+                        <ul className='box-list'>
+                                <li className='item'><a href="#">Inicio</a></li>
+                                <li className='item'><a href="#">Quem Somos</a></li>
+                                <li className='item'><a href="#">Novidades</a></li>
+                                <li className='item'><a href="#">Cardápio</a></li>
+                                <li className='item' id='delivery-phone'><a href="#">Delivery
+                                <img src={phone} alt="Icone de delivery" className='icon-phone'/></a></li>
+                                </ul>
+                        </nav>)}
+                    </div>
             </header>
     )
 }

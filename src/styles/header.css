@@ -1,0 +1,104 @@
+.box-principal {
+    width: 100vw;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.567);
+    color: #fff;
+    .box-title {
+        font-family: 'Fira Code';
+        display: flex;
+        gap: 10px;
+        margin: 10px 0px 0px 20px;
+        flex: 0 2 17.7em;
+        h1 {
+            background-image: linear-gradient(to top, #FF2E00, #F8861E);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    .box-cart {
+        margin: 15px 0px 0px 20px;
+        padding: 5px;
+        background-color: #F87A05;
+        border-radius: 10px;    
+    }
+
+    .box-cart:hover {
+        cursor: pointer;
+        background-color: #FF0000;
+        transition: 3ms;
+    }
+
+    .box-button {
+        height: 2em;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.567);
+        color: #fff;
+        border: none;
+        font-size: 2em;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    .box-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: larger;
+        font-weight: 400;
+        background-color: rgba(0, 0, 0, 0.567);
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            list-style-type: none;
+            width: 100vw;
+            a {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 700;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .item {
+            border-top: 1px solid #000000;
+        }
+
+        .item:hover {
+            border: none;
+        }
+
+        li:hover {
+            background-color: #ff2f00;
+            color: #ffffff6a;
+            cursor: pointer;
+            border: none;
+        }
+
+
+        #delivery-phone {
+            font-family: 'Fira Code';
+            height: 2em;
+            padding: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF0000;
+            border: none;
+            font-size: 2em;
+            font-weight: bolder;
+            text-indent: 1em;
+        }
+
+    }
+}
