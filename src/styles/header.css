@@ -9,6 +9,8 @@
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.567);
     color: #fff;
+    position: fixed;
+    z-index: 1000;
     .box-title {
         font-family: 'Fira Code';
         display: flex;
@@ -37,7 +39,7 @@
     }
 
     .box-button {
-        height: 2em;
+        height: 1.5em;
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.567);
         color: #fff;
@@ -45,6 +47,10 @@
         font-size: 2em;
         font-weight: bolder;
         cursor: pointer;
+    }
+
+    .box-button:hover {
+        color: #F8861E;
     }
 
     .box-list {
@@ -55,7 +61,7 @@
         font-family: 'Courier New', Courier, monospace;
         font-size: larger;
         font-weight: 400;
-        background-color: rgba(0, 0, 0, 0.567);
+        background-color: rgb(0, 0, 0);
         li {
             display: flex;
             align-items: center;
@@ -79,7 +85,7 @@
         }
 
         li:hover {
-            background-color: #ff2f00;
+            background-color: #ff5500f1;
             color: #ffffff6a;
             cursor: pointer;
             border: none;
@@ -99,6 +105,5 @@
             font-weight: bolder;
             text-indent: 1em;
         }
-
     }
 }

@@ -14,7 +14,7 @@ export default function NavBar() {
     return (
             <header className="box-principal">
                 <div className='box-title'>
-                    <h1>CodeXburguer</h1>
+                    <h1>codeXburguer</h1>
                     <img src={logoburguer} alt="logo da hamburgueria"/>
                 </div>
                 <div className='box-cart'>
