@@ -18,7 +18,7 @@
         margin: 10px 0px 0px 20px;
         flex: 0 2 17.7em;
         h1 {
-            background-image: linear-gradient(to top, #FF2E00, #F8861E);
+            background-image: linear-gradient(to top, #f96948, #ffffff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;

@@ -1,4 +1,4 @@
-import Carrosel1 from "../components/Carrosel-1";
+import Carrosel from "../components/Carrosel";
 import ImgDeFundo from "../components/ImgDeFundo";
 import NavBar from "../components/NavBar";
 
@@ -7,7 +7,7 @@ export default function Inicio() {
         <div>
             <ImgDeFundo/>
             <NavBar/>
-            <Carrosel1/>
+            <Carrosel/>
         </div>
     )
 }
