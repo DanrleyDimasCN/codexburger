@@ -1,0 +1,38 @@
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100vw;
+    .box-carrosel {
+        display: flex;
+        align-items: center;
+  
+   .carrosel-caption-C{
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    p {
+     word-break: normal;
+    }
+    .item-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .item-logo-burguer {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
+    }
+    .carousel-caption-python {
+
+    }
+
+    .carousel-caption-ruby {
+
+    }
+}
+}
