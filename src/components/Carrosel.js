@@ -11,15 +11,15 @@ import '../styles/carrosel.css';
 export default function Carrosel() {
     return (
         <div className='box-main'>
-            <Carousel interval={3000} pause={false} className='box-carrosel'>
-                <Carousel.Item className='box-item'>
+            <Carousel interval={3000} pause={false}>
+                <Carousel.Item>
                     <img
                     src={pythonBurguer}
                     alt="Burguer Artesanal Python"
-                    className='img-python'/>
-                    <Carousel.Caption className='carrosel-caption-python'>
-                        <div className="item-logo">
-                            <img src={logopython} alt="Logo da Python" className='item-logo-burguer'/>
+                    className='img-burguer'/>
+                    <Carousel.Caption>
+                        <div className='logo-icon'>
+                            <img src={logopython} alt="Logo da Python"/>
                             <h3>Python</h3>
                         </div>
                         <p>
@@ -35,10 +35,10 @@ export default function Carrosel() {
                         <img
                         src={cBurguer}
                         alt="Burguer Artesanal C"
-                    />
-                    <Carousel.Caption className='carrosel-caption-C'>
-                        <div className="item-logo">
-                            <img src={logoC} alt="Logo C" className='item-logo-burguer'/>
+                    className='img-burguer'/>
+                    <Carousel.Caption>
+                        <div className='logo-icon'>
+                            <img src={logoC} alt="Logo C"/>
                             <h3>C++</h3>
                         </div>
                         <p>
@@ -54,10 +54,10 @@ export default function Carrosel() {
                 <img
                         src={rubyBurguer}
                         alt="Burguer Artesanal Ruby"
-                    />
-                    <Carousel.Caption className='carrosel-caption-ruby'>
-                        <div className="item-logo">
-                            <img src={logoruby} alt="Logo do Ruby" className='item-logo-burguer'/>
+                    className='img-burguer'/>
+                    <Carousel.Caption>
+                        <div className='logo-icon'>
+                            <img src={logoruby} alt="Logo do Ruby"/>
                             <h3>Ruby</h3>
                         </div>
                         <p>

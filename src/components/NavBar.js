@@ -31,8 +31,9 @@ export default function NavBar() {
                                 <li className='item'><a href="#">Novidades</a></li>
                                 <li className='item'><a href="#">Cardápio</a></li>
                                 <li className='item' id='delivery-phone'><a href="#">Delivery
-                                <img src={phone} alt="Icone de delivery" className='icon-phone'/></a></li>
-                                </ul>
+                                <img src={phone} alt="Icone de delivery"/></a>
+                                </li>
+                        </ul>
                         </nav>)}
                     </div>
             </header>
