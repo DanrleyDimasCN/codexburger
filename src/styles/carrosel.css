@@ -5,6 +5,19 @@
     align-items: center;
     width: 100vw;
     height: 60vh;
+
+    .slide {
+        display: flex;
+        align-items: center;
+        .carousel-control-prev {
+            height: 268px;
+            width: 40px;
+        }
+        .carousel-control-next {
+            height: 268px;
+            width: 40px;
+        }
+    }
     .carousel {
         display: flex;
         justify-content: center;
@@ -14,7 +27,8 @@
         .carousel-item {
             
             .img-burguer {
-                
+              height: 310px;
+              width: 400px;
             }
         }
         }
@@ -24,11 +38,13 @@
         flex-direction: column;
         justify-content: left;
         text-align: justify;
+        height: 240px;
         .logo-icon {
-            display: flex;
-            flex-direction: row;
-            justify-content: left;
-            align-items: center;
+           display: flex;
+           
+           img {
+            
+           }
             
         }
     }

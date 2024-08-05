@@ -11,7 +11,7 @@ import '../styles/carrosel.css';
 export default function Carrosel() {
     return (
         <div className='box-main'>
-            <Carousel interval={3000} pause={false}>
+            <Carousel interval={30000} pause={false}>
                 <Carousel.Item>
                     <img
                     src={pythonBurguer}
