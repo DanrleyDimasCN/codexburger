@@ -1,8 +1,9 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, CarouselCaption } from 'react-bootstrap';
 import pythonBurguer from '../assets/python-burguer.png';
 import cBurguer from '../assets/C-burguer.png';
 import rubyBurguer from '../assets/ruby-burguer.png';
+import milkshake from '../assets/milk-shake.png';
 import logopython from '../assets/logo-python.svg';
 import logoC from '../assets/logo-c.svg';
 import logoruby from '../assets/logo-ruby.svg';
@@ -11,7 +12,7 @@ import '../styles/carrosel.css';
 export default function Carrosel() {
     return (
         <div className='box-main'>
-            <Carousel interval={30000} pause={false}>
+            <Carousel interval={3000} pause={false}>
                 <Carousel.Item>
                     <img
                     src={pythonBurguer}
@@ -28,7 +29,14 @@ export default function Carrosel() {
                             Queijo Prato, Salada e maionese verde.
                         </p>
                             <p>Acompanha Fritas</p>
-                            <p>R$ 34,90</p>
+                            <div className="box-preco">
+                                <p>R$</p>
+                                <p>34</p>
+                                <p>,90</p>
+                            </div>
+                            <div className="button-pedir">
+                                <p>Pedir Agora</p>
+                            </div>
                     </Carousel.Caption>
                  </Carousel.Item>
                  <Carousel.Item>
@@ -47,7 +55,14 @@ export default function Carrosel() {
                         é um dos nossos mais populares e recomendados.
                         </p>
                         <p>Acompanha Fritas</p>
-                        <p>R$ 27,90</p>
+                        <div className="box-preco">
+                            <p>R$</p>
+                            <p>27</p>
+                            <p>,90</p>
+                        </div>
+                        <div className="button-pedir">
+                            <p>Pedir Agora</p>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -65,9 +80,38 @@ export default function Carrosel() {
                             um sandwich dinâmico com um gosto forte e marcante.
                         </p>
                         <p>Acompanha Fritas</p>
-                        <p>R$ 29,90</p>
+                        <div className="box-preco">
+                            <p>R$</p>
+                            <p>29</p>
+                            <p>,90</p>
+                        </div>
+                        <div className="button-pedir">
+                            <p>Pedir Agora</p>
+                        </div>
                     </Carousel.Caption>
                 </Carousel.Item>
+            </Carousel>
+            <Carousel interval={300000} pause={true} className='segundo-carrosel'>
+                <Carousel.Item className='box-bebidas'>
+                    <img 
+                    src={milkshake}
+                    alt='Milk-Shake Artesanal'
+                    className='img-shake'/>
+                </Carousel.Item>
+                <Carousel.Caption className='box-descricao'>
+                    <div className='box-milk'>
+                        <h3>Milk Shake</h3>
+                        <p>Perfeito para acompanhar o seu Burger.</p>
+                    </div>
+                    <div className="box-preco">
+                            <p>R$</p>
+                            <p>29</p>
+                            <p>,90</p>
+                        </div>
+                        <div className="button-pedir">
+                            <p>Pedir Agora</p>
+                        </div>
+                </Carousel.Caption>
             </Carousel>
         </div>
     )
