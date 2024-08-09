@@ -1,6 +1,9 @@
 import React from 'react';
-import { Carousel, CarouselCaption } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import pythonBurguer from '../assets/python-burguer.png';
+import soda from '../assets/soda-italiana.png'
+import suco from '../assets/sucos-naturais.png'
+
 import cBurguer from '../assets/C-burguer.png';
 import rubyBurguer from '../assets/ruby-burguer.png';
 import milkshake from '../assets/milk-shake.png';
@@ -91,27 +94,77 @@ export default function Carrosel() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-            <Carousel interval={300000} pause={true} className='segundo-carrosel'>
-                <Carousel.Item className='box-bebidas'>
-                    <img 
-                    src={milkshake}
-                    alt='Milk-Shake Artesanal'
-                    className='img-shake'/>
-                </Carousel.Item>
-                <Carousel.Caption className='box-descricao'>
-                    <div className='box-milk'>
-                        <h3>Milk Shake</h3>
-                        <p>Perfeito para acompanhar o seu Burger.</p>
+            <Carousel interval={3000} pause={true} className='box-main-2'>
+                <Carousel.Item className='box-milk-shake'>
+                    <div className='img-shake'>
+                        <img
+                        src={milkshake}
+                        alt='Milk-Shake Artesanal'
+                        />
                     </div>
-                    <div className="box-preco">
-                            <p>R$</p>
-                            <p>29</p>
-                            <p>,90</p>
+                    <div className='box-info'>
+                        <div className='box-descricao'>
+                            <h3>Milk Shake</h3>
+                            <p>Perfeito para acompanhar o seu Burger.</p>
                         </div>
-                        <div className="button-pedir">
+                        <div className="box-preco">
+                                <p>R$</p>
+                                <p>29</p>
+                                <p>,90</p>
+                            </div>
+                            
+                                <div className="button-pedir">
+                                    <p>Pedir Agora</p>
+                                </div>
+                            
+                    </div>
+                    </Carousel.Item>
+                    <Carousel.Item className='box-soda'>
+                    <div className='img-soda'>
+                        <img
+                        src={soda}
+                        alt='soda Italiana'
+                        />
+                    </div>
+                    <div className='box-info'>
+                        <div className='box-descricao'>
+                            <h3>Soda Italiana</h3>
+                            <p>Que tal uma bebida refrescante ? nossas sodas italiana serão perfeitas</p>
+                        </div>
+                        <div className="box-preco">
+                                <p>R$</p>
+                                <p>29</p>
+                                <p>,90</p>
+                            </div>
+                            
+                                <div className="button-pedir">
+                                    <p>Pedir Agora</p>
+                                </div>
+                            
+                    </div>
+                    </Carousel.Item>
+                    <Carousel.Item className='box-suco'>
+                    <div className='img-suco'>
+                        <img
+                        src={suco}
+                        alt='Sucos Naturais'
+                        />
+                    </div>
+                    <div className='box-info'>
+                        <div className='box-descricao'>
+                            <h3>Sucos Naturais</h3>
+                            <p>Todos os nossos sucos são naturais, A base de leite ou água, escolha o que preferir.</p>
+                        </div>
+                        <div className="box-preco">
+                                <p>R$</p>
+                                <p>29</p>
+                                <p>,90</p>
+                            </div>
+                            <div className="button-pedir">
                             <p>Pedir Agora</p>
-                        </div>
-                </Carousel.Caption>
+                            </div>  
+                    </div>
+                    </Carousel.Item>
             </Carousel>
         </div>
     )
