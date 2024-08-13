@@ -97,7 +97,7 @@ export default function Carrosel() {
                 </Carousel>
                 </div>
                 <div className='box-main-2'>
-                    <Carousel interval={3000} pause={false}>
+                    <Carousel interval={30000} pause={false}>
                         <Carousel.Item className='box-milk-shake'>
                             <div className='img-shake'>
                                 <img
@@ -105,22 +105,22 @@ export default function Carrosel() {
                                 alt='Milk-Shake Artesanal'
                                 />
                             </div>
-                            <div className='box-info'>
-                                <div className='box-descricao'>
-                                    <h3>Milk Shake</h3>
-                                    <p>Perfeito para acompanhar o seu Burger.</p>
-                                </div>
-                                <div className="box-preco">
-                                        <p>R$</p>
-                                        <p>29</p>
-                                        <p>,90</p>
+                            <Carousel.Caption>
+                                <div className='box-info'>
+                                    <div className='box-descricao'>
+                                        <h3>Milk Shake</h3>
+                                        <p>Perfeito para acompanhar o seu Burger.</p>
                                     </div>
-            
-                                        <div className="button-pedir">
-                                            <p>Pedir Agora</p>
+                                    <div className="box-preco">
+                                            <p>R$</p>
+                                            <p>29</p>
+                                            <p>,90</p>
                                         </div>
-            
-                            </div>
+                                            <div className="button-pedir">
+                                                <p>Pedir Agora</p>
+                                            </div>
+                                </div>
+                            </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item className='box-soda'>
                             <div className='img-soda'>
@@ -129,22 +129,22 @@ export default function Carrosel() {
                                 alt='soda Italiana'
                                 />
                             </div>
-                            <div className='box-info'>
-                                <div className='box-descricao'>
-                                    <h3>Soda Italiana</h3>
-                                    <p>Que tal uma bebida refrescante ? nossas sodas italiana serão perfeitas</p>
-                                </div>
-                                <div className="box-preco">
-                                        <p>R$</p>
-                                        <p>29</p>
-                                        <p>,90</p>
+                            <Carousel.Caption>
+                                <div className='box-info'>
+                                    <div className='box-descricao'>
+                                        <h3>Soda Italiana</h3>
+                                        <p>Que tal uma bebida refrescante ? nossas sodas italiana serão perfeitas</p>
                                     </div>
-            
-                                        <div className="button-pedir">
-                                            <p>Pedir Agora</p>
+                                    <div className="box-preco">
+                                            <p>R$</p>
+                                            <p>29</p>
+                                            <p>,90</p>
                                         </div>
-            
-                            </div>
+                                            <div className="button-pedir">
+                                                <p>Pedir Agora</p>
+                                            </div>
+                                </div>
+                            </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item className='box-suco'>
                             <div className='img-suco'>
@@ -153,20 +153,22 @@ export default function Carrosel() {
                                 alt='Sucos Naturais'
                                 />
                             </div>
-                            <div className='box-info'>
-                                <div className='box-descricao'>
-                                    <h3>Sucos Naturais</h3>
-                                    <p>Todos os nossos sucos são naturais, A base de leite ou água, escolha o que preferir.</p>
+                            <Carousel.Caption>
+                                <div className='box-info'>
+                                    <div className='box-descricao'>
+                                        <h3>Sucos Naturais</h3>
+                                        <p>Todos os nossos sucos são naturais, A base de leite ou água, escolha o que preferir.</p>
+                                    </div>
+                                    <div className="box-preco">
+                                            <p>R$</p>
+                                            <p>29</p>
+                                            <p>,90</p>
+                                        </div>
+                                        <div className="button-pedir">
+                                        <p>Pedir Agora</p>
+                                        </div>
                                 </div>
-                                <div className="box-preco">
-                                        <p>R$</p>
-                                        <p>29</p>
-                                        <p>,90</p>
-                                    </div>
-                                    <div className="button-pedir">
-                                    <p>Pedir Agora</p>
-                                    </div>
-                            </div>
+                            </Carousel.Caption>
                             </Carousel.Item>
                     </Carousel>
                 </div>

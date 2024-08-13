@@ -39,7 +39,7 @@
                 .carousel-item {
     
                     .img-burguer {
-                        height: 45vh;
+                        height: 43vh;
                         width: 100vw;
                     }
     
@@ -89,187 +89,53 @@
     }
 
     .box-main-2 {
-     
-    
-        .carousel-indicators > button.active {
-            background-color: #FE0000;
-        }
-    
-        .box-suco {
-            height: 230px;
-            display: flex;
-            flex-direction: row;
-            background-color: #FFA0B7;
-            img {
-                height: 230px;
-                width: 230px;
-            }
-        .box-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+        height: 30vh;
+        width: 100vw;
+        .carousel {
+            height: 30vh;
             width: 100vw;
-            margin-left: 5px;
-    
-        .box-descricao {
-            font-size: 18px;
-            height: 130px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #fff;
-            h3 {
-                font-weight: 800;
-                width: 50vw;
-                text-align: center;
-            }
-            p {
-                font-weight: 700;
+            gap: 3em;
+            .carousel-inner {
+                height: 25vh;
+                background-color: #FFA0B7;
+                .carousel-item {
+                    height: 25vh;
+                    width: 100vw;
+                    img {
+                        height: 26vh;
+                        width: 47vw;
+                    }
+                    .carousel-caption {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        height: 20vh;
+                        width: 320px;
+                        .box-info {
+                            font-size: 16px;
+                            font-weight: bold;
+                           display: flex;
+                           flex-direction: column;
+                          
+                             .box-descricao {
+                          
+                            p {
+                                
+                            }
+                        }
+                        .box-preco {
+                            display: flex;
+                        }
+                        .button-pedir {
+
+                        }
+                        }
+                       
+                }
             }
         }
-        .box-preco {
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            color: #fff;
-            align-items: baseline;
-            gap: 2.5px;
-            margin-bottom: 4px;
-            :nth-child(2) {
-                font-size: 2em;
-                font-weight: bold;
-            }
-        }
-            .button-pedir {
-            height: 40px;
-            width: 120PX;
-            display: flex;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 20px;
-            background-color: #FE0000;
-            color: #fff;
-            border-radius: 10px;
-            }
-        }
-        }
-    
-        .box-milk-shake {
-            height: 230px;
-            display: flex;
-            flex-direction: row;
-            background-color: #FFA0B7;
-            img {
-                height: 230px;
-                width: 230px;
-            }
-        .box-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100vw;
-            margin-left: 5px;
-    
-        .box-descricao {
-            font-size: 18px;
-            height: 130px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #fff;
-            h3 {
-                font-weight: 800;
-                width: 50vw;
-                text-align: center;
-            }
-            p {
-                font-weight: 700;
-            }
-        }
-        .box-preco {
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            color: #fff;
-            align-items: baseline;
-            gap: 2.5px;
-            margin-bottom: 4px;
-            :nth-child(2) {
-                font-size: 2em;
-                font-weight: bold;
-            }
-        }
-            .button-pedir {
-            height: 40px;
-            width: 120PX;
-            display: flex;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 20px;
-            background-color: #FE0000;
-            color: #fff;
-            border-radius: 10px;
-            }
-        }
-        }
-        .box-soda {
-            height: 230px;
-            display: flex;
-            flex-direction: row;
-            background-color: #FFA0B7;
-            img {
-                height: 230px;
-                width: 230px;
-            }
-        .box-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100vw;
-            margin-left: 5px;
-    
-        .box-descricao {
-            font-size: 18px;
-            height: 130px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #fff;
-            h3 {
-                font-weight: 800;
-                width: 50vw;
-                text-align: center;
-            }
-            p {
-                font-weight: 700;
-            }
-        }
-        .box-preco {
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-            color: #fff;
-            align-items: baseline;
-            gap: 2.5px;
-            margin-bottom: 4px;
-            :nth-child(2) {
-                font-size: 2em;
-                font-weight: bold;
-            }
-        }
-            .button-pedir {
-            height: 40px;
-            width: 120PX;
-            display: flex;
-            justify-content: center;
-            font-weight: 600;
-            font-size: 20px;
-            background-color: #FE0000;
-            color: #fff;
-            border-radius: 10px;
-            }
-        }
-        }
-      }
+    }
 }
 
+}
