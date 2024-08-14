@@ -1,9 +1,9 @@
-import Inicio from "./pages/Inicio";
+import Rotas from "../src/routes/route.js";
 
 export default function App() {
   return (
     <div>
-      <Inicio/>
+      <Rotas/>
     </div>
   )
 };

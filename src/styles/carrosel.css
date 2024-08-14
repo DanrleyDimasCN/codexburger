@@ -1,24 +1,24 @@
 .box-global {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
 
     .box-main {
-        padding-top: 4.2em;
+        height: 50vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
         
         .carousel {
-            height: 50vh;
+            margin-top: 37.5px;
+            height: 400px;
             width: 100vw;
             display: flex;
             flex-direction: column;
     
             .carousel-indicators {
                 position: relative;
-                top: 100%;
+                top: 85%;
                 button {
                     position: relative;
                 }
@@ -37,36 +37,68 @@
             }
     
                 .carousel-item {
+                    height: 190px;
+                    width: 320px;
     
                     .img-burguer {
-                        height: 43vh;
-                        width: 100vw;
+                        height: 30vh;
+                       width: 100vw;
                     }
     
                     .carousel-caption {
-                        height: 345px;
+                        padding: 0;
+                        height: 170px;
+                        width: 70vw;
                         padding: 0;
                         display: flex;
                         flex-direction: column;
                         text-align: justify;
                         .logo-icon {
-                            width: 100px;
+                            width: 20px;
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
                             
+                            img {
+                                width: 30px;
+                            }
+                            h3 {
+                                font-size: 1em;
+                            }
                         }
-    
-                        .button-pedir {
+
+                        p {
+                            margin: 0;
+                            text-align: justify;
+                            font-size: 12px;
+                        }
+
+                        .fritas {
+                            font-style: italic;
+                            font-size: 9px;
+                            
+                        }
+
+                        .box-oferta {
+                            height: 50px;
+                            width: 100vw;
+                            display: flex;
+                            align-items: stretch;
+                            gap: 5em;
+                             .button-pedir {
                             display: flex;
                             justify-content: center;
-                            align-items: flex-start;
-                            height: 40px;
-                            width: 130px;
+                            align-items: center;
+                            height: 30px;
+                            width: 100px;
                             border-radius: 10px;
-                            font-size: 23px;
+                            font-size: 40px;
                             font-weight: 500;
                             background-color: #FF3D00;
+
+                            p {
+                                font-size: 15px;
+                            }
                         }
     
                         .box-preco {
@@ -82,60 +114,124 @@
                                 font-weight: 900;
                             }
                         }
+                        }
+                       
                     }
                 }
         }
       
     }
 
-    .box-main-2 {
-        height: 30vh;
+    .carrosel-bebidas {
         width: 100vw;
-        .carousel {
-            height: 30vh;
-            width: 100vw;
-            display: flex;
-            gap: 3em;
-            .carousel-inner {
-                height: 25vh;
-                background-color: #FFA0B7;
-                .carousel-item {
-                    height: 25vh;
-                    width: 100vw;
-                    img {
-                        height: 26vh;
-                        width: 47vw;
-                    }
-                    .carousel-caption {
-                        display: flex;
-                        justify-content: flex-end;
-                        align-items: center;
-                        height: 20vh;
-                        width: 320px;
-                        .box-info {
-                            font-size: 16px;
-                            font-weight: bold;
-                           display: flex;
-                           flex-direction: column;
-                          
-                             .box-descricao {
-                          
-                            p {
-                                
-                            }
-                        }
-                        .box-preco {
-                            display: flex;
-                        }
-                        .button-pedir {
 
-                        }
-                        }
-                       
-                }
+        .carousel-indicators {
+            position: absolute;
+            top: 100%;
+            button {
+                position: relative;
             }
+            
+        }
+
+        .carousel-indicators > button {
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #FF3D00;
+        }
+    
+    .carrosel-bebida {
+        width: 100vw;
+        background-color: #FFA0B7;
+
+        .carrosel-img {
+            width: 30vw;
+
+            img {
+                height: 190px;
+                width: 180px;
+            }
+        }
+
+        .carousel-caption {
+
+          .carrosel-info {
+                height: 150px;
+                width: 78vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 2px;
+
+                .carrosel-descricao {
+                    width: 35vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: justify;
+                   
+                    h3 {
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                    p { 
+                        margin: 0;
+                        width: 100px;
+                        font-size: 12px;
+                        text-align: justify;
+
+                    }
+                }
+
+                .carrosel-valor {
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    .carrosel-preco {
+                    margin-bottom: 2em;
+                    height: 10px;
+                    width: 30vw;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+                    justify-content: end;
+
+                    :nth-child(2) {
+                        font-size: 1.5em;
+                        font-weight: 900;
+                    }
+
+                    p {
+                        margin: 0;
+                        text-align: justify;
+                        font-size: 13px; 
+
+                    }
+
+                    
+                }
+
+                    .button-pedir {
+                        height: 25px;
+                        width: 80px;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        background-color: #FF3D00;
+                    
+                } 
+          }
         }
     }
 }
-
+}
 }

@@ -32,14 +32,16 @@ export default function Carrosel() {
                                 com aquele sabor forte e para dar aquela dinâmica,
                                 Queijo Prato, Salada e maionese verde.
                             </p>
-                                <p>Acompanha Fritas</p>
-                                <div className="box-preco">
-                                    <p>R$</p>
-                                    <p>34</p>
-                                    <p>,90</p>
-                                </div>
-                                <div className="button-pedir">
-                                    <p>Pedir Agora</p>
+                                <p className='fritas'>Acompanha Fritas</p>
+                                <div className='box-oferta'>
+                                    <div className="box-preco">
+                                        <p>R$</p>
+                                        <p>34</p>
+                                        <p>,90</p>
+                                    </div>
+                                    <div className="button-pedir">
+                                        <p>Pedir Agora</p>
+                                    </div>
                                 </div>
                         </Carousel.Caption>
                      </Carousel.Item>
@@ -58,14 +60,16 @@ export default function Carrosel() {
                             ovo e guacamole, Tão gostoso que em 3 mordidas você já acabou,
                             é um dos nossos mais populares e recomendados.
                             </p>
-                            <p>Acompanha Fritas</p>
-                            <div className="box-preco">
-                                <p>R$</p>
-                                <p>27</p>
-                                <p>,90</p>
-                            </div>
-                            <div className="button-pedir">
-                                <p>Pedir Agora</p>
+                            <p className='fritas'>Acompanha Fritas</p>
+                            <div className='box-oferta'>
+                                <div className="box-preco">
+                                    <p>R$</p>
+                                    <p>27</p>
+                                    <p>,90</p>
+                                </div>
+                                <div className="button-pedir">
+                                    <p>Pedir Agora</p>
+                                </div>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -83,90 +87,98 @@ export default function Carrosel() {
                                 Pão Italiano, presunto parma, rúcula e brócolis,
                                 um sandwich dinâmico com um gosto forte e marcante.
                             </p>
-                            <p>Acompanha Fritas</p>
-                            <div className="box-preco">
-                                <p>R$</p>
-                                <p>29</p>
-                                <p>,90</p>
-                            </div>
-                            <div className="button-pedir">
-                                <p>Pedir Agora</p>
+                            <p className='fritas'>Acompanha Fritas</p>
+                            <div className='box-oferta'>
+                                <div className="box-preco">
+                                    <p>R$</p>
+                                    <p>29</p>
+                                    <p>,90</p>
+                                </div>
+                                <div className="button-pedir">
+                                    <p>Pedir Agora</p>
+                                </div>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
                 </div>
-                <div className='box-main-2'>
-                    <Carousel interval={30000} pause={false}>
-                        <Carousel.Item className='box-milk-shake'>
-                            <div className='img-shake'>
+                <div className='carrosel-bebidas'>
+                    <Carousel interval={3000} pause={false}>
+                        <Carousel.Item className='carrosel-bebida'>
+                            <div className='carrossel-img'>
                                 <img
                                 src={milkshake}
                                 alt='Milk-Shake Artesanal'
                                 />
                             </div>
                             <Carousel.Caption>
-                                <div className='box-info'>
-                                    <div className='box-descricao'>
+                                <div className='carrosel-info'>
+                                    <div className='carrosel-descricao'>
                                         <h3>Milk Shake</h3>
-                                        <p>Perfeito para acompanhar o seu Burger.</p>
+                                        <p>Que tal um Milk-shake ? Perfeito para acompanhar o seu Burger.</p>
                                     </div>
-                                    <div className="box-preco">
+                                    <div className='carrosel-valor'>
+                                        <div className="carrosel-preco">
                                             <p>R$</p>
                                             <p>29</p>
                                             <p>,90</p>
                                         </div>
-                                            <div className="button-pedir">
-                                                <p>Pedir Agora</p>
-                                            </div>
+                                        <div className="button-pedir">
+                                            <p>Pedir Agora</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item className='box-soda'>
-                            <div className='img-soda'>
+                            <Carousel.Item className='carrosel-bebida'>
+                            <div className='carrosel-img'>
                                 <img
                                 src={soda}
                                 alt='soda Italiana'
                                 />
                             </div>
                             <Carousel.Caption>
-                                <div className='box-info'>
-                                    <div className='box-descricao'>
+                                <div className='carrosel-info'>
+                                    <div className='carrosel-descricao'>
                                         <h3>Soda Italiana</h3>
-                                        <p>Que tal uma bebida refrescante ? nossas sodas italiana serão perfeitas</p>
+                                        <p>Que tal uma soda italiana ? doce e refrescantes.</p>
                                     </div>
-                                    <div className="box-preco">
+                                    <div className='carrosel-valor'>
+                                        <div className="carrosel-preco">
                                             <p>R$</p>
                                             <p>29</p>
                                             <p>,90</p>
                                         </div>
-                                            <div className="button-pedir">
-                                                <p>Pedir Agora</p>
-                                            </div>
-                                </div>
+                                        <div className="button-pedir">
+                                            <p>Pedir Agora</p>
+                                        </div>
+                                    </div>
+                                    </div>
                             </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item className='box-suco'>
-                            <div className='img-suco'>
+                            <Carousel.Item className='carrosel-bebida'>
+                            <div className='carrosel-img'>
                                 <img
                                 src={suco}
                                 alt='Sucos Naturais'
                                 />
                             </div>
                             <Carousel.Caption>
-                                <div className='box-info'>
-                                    <div className='box-descricao'>
+                                <div className='carrosel-info'>
+                                    <div className='carrosel-descricao'>
                                         <h3>Sucos Naturais</h3>
-                                        <p>Todos os nossos sucos são naturais, A base de leite ou água, escolha o que preferir.</p>
+                                        <p>Todos os nossos sucos são naturais. Escolha o que preferir.</p>
                                     </div>
-                                    <div className="box-preco">
+                                    <div className='carrosel-valor'>
+                                        <div className="carrosel-preco">
                                             <p>R$</p>
                                             <p>29</p>
                                             <p>,90</p>
                                         </div>
                                         <div className="button-pedir">
-                                        <p>Pedir Agora</p>
+                                            <p>Pedir Agora</p>
                                         </div>
+                                    </div>
                                 </div>
                             </Carousel.Caption>
                             </Carousel.Item>

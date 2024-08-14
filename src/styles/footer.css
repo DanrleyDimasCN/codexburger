@@ -1,0 +1,35 @@
+.rodape {
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    background-color: rgba(0, 0, 0, 0.567);
+    color: #fff;
+    font-size: 8px;
+
+    .rodape-phone {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .rodape-local {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .rodape-insta {
+        height: 16px;
+        display: flex;
+        align-items: baseline;
+        img {
+            position: absolute;
+            bottom: 4%;
+            right: 18%;
+        }
+    }
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
