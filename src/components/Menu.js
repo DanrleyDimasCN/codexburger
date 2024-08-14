@@ -112,24 +112,24 @@ export default function Menu() {
                     <h2>Bebidas</h2>
                 </div>
                     <ul>
-                        <li>Agua sem gás......................R$ 3,99</li>
-                        <li>Agua com gás......................R$ 3,99</li>
-                        <li>H2O limão.............................R$ 4,49</li>
+                        <li>Agua sem gás...................R$ 3,99</li>
+                        <li>Agua com gás...................R$ 3,99</li>
+                        <li>H2O limão.........................R$ 4,49</li>
                         <li>H2O limoneto.......................R$ 4,49</li>
                         <li>
-                            Refrigerante lata...................R$ 4,99
+                            Refrigerante lata................R$ 4,99
                             Consultar os sabores disponivéis com os nossos atendentes
                         </li>
                         <li>
-                            Suco natural......R$ 11,50
+                            Suco natural................R$ 11,50
                             Consultar os sabores disponivéis com os nossos atendentes
                         </li>
                         <li>
-                            Soda Italiana.......................R$ 14,99
+                            Soda Italiana....................R$ 14,99
                             Consultar os sabores disponivéis com os nossos atendentes
                         </li>
                         <li>
-                            Milk Shake...........................R$ 19,90
+                            Milk Shake.......................R$ 19,90
                             Morango, Ovomaltine, Maracujá
                         </li> 
                     </ul>

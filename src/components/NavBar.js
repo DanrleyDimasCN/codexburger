@@ -17,7 +17,7 @@ export default function NavBar() {
                     <Link to='/'><h1>codeXburguer</h1></Link>
                     <img src={logoburguer} alt="logo da hamburgueria" className='cabecalho_logo_burguer'/>
                     <div className='cabecalho_car'>
-                    <Link to='/carrinho'>
+                    <Link>
                         <img src={carrinho}
                         alt="Carrinho de itens selecionados"/>
                     </Link>
@@ -34,6 +34,7 @@ export default function NavBar() {
                                     <li className='item'><Link to='/'>Inicio</Link></li>
                                     <li className='item'><Link to='/quemsomos'>Quem Somos</Link></li>
                                     <li className='item'><Link to='/cardapio'>Cardápio</Link></li>
+                                    <li className='item'><Link to='/logar'>Login</Link></li>
                             </ul>
                             </nav>
                         )}
