@@ -15,6 +15,11 @@
         align-items: flex-end;
         justify-content: center;
         gap: 10px;
+
+        a {
+           text-decoration: none;
+        }
+
         h1 {
            color: #fff;
            margin: 0;
@@ -115,4 +120,32 @@
         }
 
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .menu_burguer {
+        display: none; 
+    }
+
+    .menu_burguer_nav {
+           display: block; 
+       }
+   
+       .cabecalho_titulo {
+           justify-content: space-between;
+           width: 100%;
+       }
+   
+       .menu_burguer_lista {
+           display: flex;
+           flex-direction: row;
+       }
+   
+       .menu_burguer_lista .item {
+           margin: 0 15px;
+       }
+   }
+
+@media only screen and (min-width: 1024px) {
+
 }

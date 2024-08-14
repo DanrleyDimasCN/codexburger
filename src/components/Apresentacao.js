@@ -1,8 +1,10 @@
+import '../styles/apresentacao.css'
+
 export default function Apresentacao() {
     return (
         <div>
-            <div className="Apresentacao">
-                <p>Nós somos uma start-up no ramo de restaurante,
+            <div className="apresentacao">
+                <p>Nós somos uma startup no ramo de restaurante,
                     e o nosso principal projeto são  hamburguerias artesanal
                     com diferentes temas. Com esta filial acabamos de inaugurar
                     o primeiro estabelecimento com sede em Bauru-SP. Nesta filial

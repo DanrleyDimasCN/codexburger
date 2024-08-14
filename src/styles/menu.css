@@ -1,0 +1,109 @@
+.cardapio {
+    height: 100%;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 130px;
+    }
+
+    .secao-title-burguers {
+        display: flex;
+        justify-content: center;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        border-radius: 10px;
+        width: 90vw;
+        background-color: rgba(40, 39, 39, 0.753);
+    }
+
+    .secao-burguers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-burguers > :nth-child(3) {
+       margin-top: 20px;
+       
+    }
+ 
+    .secao-burguer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        img {
+            border-radius: 10px;
+            width: 80vw;
+        }
+
+        p {
+            text-align: center;
+            font-size: 15px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.875);
+        }
+    }
+
+    .secao-name-burguer {
+        display: flex;
+        img {
+            width: 30px;
+        }
+    }
+
+    .secao-preco {
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+        background-color: rgba(0, 0, 0, 0.874);
+        color: #ff0000;
+    }
+
+    .secao-button {
+        display: flex;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        button {
+            height: 30px;
+            width: 200px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+        }
+    }
+
+
+    .secao-title-bebidas {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.921);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+    .secao-bebida-list {
+       ul {
+        border-radius: 0px 0px 10px 10px;
+        list-style-type: none;
+         background-color: rgba(0, 0, 0, 0.921);
+       }
+    }
+}
