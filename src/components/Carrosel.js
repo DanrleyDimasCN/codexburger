@@ -11,12 +11,13 @@ import logopython from '../assets/logo-python.svg';
 import logoC from '../assets/logo-c.svg';
 import logoruby from '../assets/logo-ruby.svg';
 import '../styles/carrosel.css';
+import { Link } from 'react-router-dom';
 
 export default function Carrosel() {
     return (
         <div className='box-global'>
             <div className='box-main'>
-                <Carousel interval={3000} pause={false}>
+                <Carousel interval={30000} pause={false}>
                     <Carousel.Item>
                         <img
                         src={pythonBurguer}
@@ -40,7 +41,9 @@ export default function Carrosel() {
                                         <p>,90</p>
                                     </div>
                                     <div className="button-pedir">
-                                        <p>Pedir Agora</p>
+                                        <button>
+                                        <Link to='/cardapio'>Pedir Agora</Link>
+                                        </button>
                                     </div>
                                 </div>
                         </Carousel.Caption>
@@ -68,7 +71,9 @@ export default function Carrosel() {
                                     <p>,90</p>
                                 </div>
                                 <div className="button-pedir">
-                                    <p>Pedir Agora</p>
+                                <button>
+                                <Link to='/cardapio'>Pedir Agora</Link>
+                                </button>
                                 </div>
                             </div>
                         </Carousel.Caption>
@@ -95,7 +100,9 @@ export default function Carrosel() {
                                     <p>,90</p>
                                 </div>
                                 <div className="button-pedir">
-                                    <p>Pedir Agora</p>
+                                <button>
+                                <Link to='/cardapio'>Pedir Agora</Link>
+                                </button>
                                 </div>
                             </div>
                         </Carousel.Caption>
@@ -103,7 +110,7 @@ export default function Carrosel() {
                 </Carousel>
                 </div>
                 <div className='carrosel-bebidas'>
-                    <Carousel interval={3000} pause={false}>
+                    <Carousel interval={30000} pause={false}>
                         <Carousel.Item className='carrosel-bebida'>
                             <div className='carrossel-img'>
                                 <img
@@ -124,7 +131,9 @@ export default function Carrosel() {
                                             <p>,90</p>
                                         </div>
                                         <div className="button-pedir">
-                                            <p>Pedir Agora</p>
+                                        <button>
+                                        <Link to='/cardapio'>Pedir Agora</Link>
+                                        </button>
                                         </div>
                                     </div>
                                 </div>
@@ -150,7 +159,9 @@ export default function Carrosel() {
                                             <p>,90</p>
                                         </div>
                                         <div className="button-pedir">
-                                            <p>Pedir Agora</p>
+                                        <button>
+                                        <Link to='/cardapio'>Pedir Agora</Link>
+                                        </button>
                                         </div>
                                     </div>
                                     </div>
@@ -176,7 +187,9 @@ export default function Carrosel() {
                                             <p>,90</p>
                                         </div>
                                         <div className="button-pedir">
-                                            <p>Pedir Agora</p>
+                                        <button>
+                                        <Link to='/cardapio'>Pedir Agora</Link>
+                                        </button>
                                         </div>
                                     </div>
                                 </div>

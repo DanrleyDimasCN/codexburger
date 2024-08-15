@@ -85,16 +85,22 @@
                             display: flex;
                             align-items: stretch;
                             gap: 5em;
-                             .button-pedir {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 30px;
-                            width: 100px;
-                            border-radius: 10px;
-                            font-size: 40px;
-                            font-weight: 500;
-                            background-color: #FF3D00;
+
+                            button {
+                                border-radius: 10px;
+                                border: none;
+                                height: 30px;
+                                width: 90px;
+                                background-color: #FF3D00;
+                            }
+
+                            a {
+                                font-weight: 500;
+                                border: none;
+                                color: #fff;
+                                text-decoration: none;
+                                border-radius: 10px;
+                            }
 
                             p {
                                 font-size: 15px;
@@ -220,18 +226,181 @@
                     
                 }
 
-                    .button-pedir {
+                    button {
+                        border: none;
                         height: 25px;
                         width: 80px;
                         border-radius: 10px;
                         font-size: 14px;
                         font-weight: 500;
                         background-color: #FF3D00;
-                    
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
                 } 
           }
         }
     }
 }
 }
+
+@media (min-width: 375px) {
+    .box-global {
+        font-size: 1em;
+       
+    }
+   
+    .carrosel-bebidas {
+         .carrosel-bebida {
+            & .carousel-caption {
+                & .carrosel-info {
+                    width: 300px;
+                    & .carrosel-descricao {
+                        p {
+                            width: 200px;
+                            font-size: 1em;
+                            font-weight: 500;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+@media (min-width: 768px) {
+    .box-global {
+        & .box-main {
+            & .carousel {
+                & .carousel-item {
+                    & .carousel-caption {
+                        p {
+                            font-size: 1em;
+                        }
+
+                        .fritas {
+                            font-size: 1em;
+                        }
+
+                        & .logo-icon {
+                            h3 {
+                                font-size: 2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .box-global {
+        & .box-main {
+            & .carousel {
+                & .carousel-item {
+                    & .carousel-caption {
+                        & .box-oferta {
+                            button {
+                                border-radius: 10px;
+                                border: none;
+                                height: 50px;
+                                width: 110px;
+                                background-color: #FF3D00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .carrosel-bebidas {
+        & .carrosel-bebida {
+            & .carousel-caption {
+                & .carrosel-info {
+                    & .carrosel-descricao {
+                        h3 {
+                            width: 300px;
+                           margin-left: 9em;
+                            font-size: 2em;
+                            font-weight: bold;
+                        }
+
+                        p {
+                            margin-left: 10em;
+                            width: 400px;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .carrosel-bebidas {
+        & .carrosel-bebida {
+            & .carousel-caption {
+                & .carrosel-info {
+                    & .carrosel-valor {
+                        & button {
+                            height: 30px;
+                            width: 150px;
+                            a {
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .carrosel-bebidas {
+        & .carrosel-bebida {
+            & .carousel-caption {
+                & .carrosel-info {
+                    & .carrosel-valor {
+                        height: 70px;
+                        & .carrosel-preco {
+                            height: 1px;
+                            display: flex;
+                            :nth-child(2) {
+                                font-size: 2em;
+                                font-weight: 900;
+                            }
+                            :nth-child(1) {
+                                font-size: 1em;
+                                font-weight: 900;
+                            }
+                            :nth-child(3) {
+                                font-size: 1em;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .carrosel-bebidas {
+            & .carrosel-bebida {
+                & .carousel-caption {
+                    & .carrosel-info {
+                        & .carrosel-valor {
+                            & button {
+                                margin-left: 3em;
+                                height: 30px;
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }

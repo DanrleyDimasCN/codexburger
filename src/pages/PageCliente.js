@@ -1,6 +1,6 @@
 import ImgDeFundo2 from "../components/ImgDeFundo-2";
 import NavBar from "../components/NavBar";
-import Cliente from "../components/cliente";
+import Cliente from "../components/Cliente";
 
 
 export default function PageCliente() {
@@ -10,5 +10,6 @@ export default function PageCliente() {
             <NavBar/>
             <Cliente/>
         </div>
+        
     )
 }

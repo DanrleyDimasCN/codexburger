@@ -54,7 +54,7 @@
             text-align: center;
             font-size: 15px;
             border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.875);
+            background-color: rgba(160, 7, 7, 0.875);
         }
     }
 
@@ -72,8 +72,8 @@
         align-items: center;
         font-size: 30px;
         font-weight: bolder;
-        background-color: rgba(0, 0, 0, 0.874);
-        color: #ff0000;
+        background-color: rgba(160, 7, 7, 0.875);
+        color: #fff;
     }
 
     .secao-button {
@@ -104,6 +104,23 @@
         border-radius: 0px 0px 10px 10px;
         list-style-type: none;
          background-color: rgba(0, 0, 0, 0.921);
+      
+         button {
+            margin-left: 2px;
+            border: none;
+            width: 15px;
+            height: 20px;
+         }
        }
+    }
+
+    .button-pedido {
+        margin-bottom: 10px;
+        width: 100px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ff0000;
+        color: #fff;
+
     }
 }

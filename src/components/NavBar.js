@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 export default function NavBar() {
     const [isOpen, SetisOpen] = useState(false)
+    const [autenticado, setAutenticado] = useState(true)
     
     function toggleMenu() {
         SetisOpen(!isOpen);
@@ -16,12 +17,20 @@ export default function NavBar() {
                 <div className='cabecalho_titulo'>
                     <Link to='/'><h1>codeXburguer</h1></Link>
                     <img src={logoburguer} alt="logo da hamburgueria" className='cabecalho_logo_burguer'/>
+                   
+                    {autenticado ? <Link to='/pagecliente'>
+                            <div className='cabecalho_car'>
+                            <img src={carrinho}
+                            alt="Carrinho de itens selecionados"/>
+                            </div>
+                    </Link> : <Link to='/error'>
+
                     <div className='cabecalho_car'>
-                    <Link>
-                        <img src={carrinho}
-                        alt="Carrinho de itens selecionados"/>
-                    </Link>
-                    </div>           
+                            <img src={carrinho}
+                            alt="Carrinho de itens selecionados"/>
+                            </div>
+                    </Link>}
+                               
                 </div>
                 <div className='menu_burguer'>
                     <div>
